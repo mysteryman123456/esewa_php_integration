@@ -46,7 +46,7 @@ if (isset($_GET['data'])) {
             echo "Signature verification failed.";
         }
     } else {
-        echo "Invalid transaction status or missing data.";
+        echo "op, its invalid";
     }
 } else {
     echo "No data received.";
