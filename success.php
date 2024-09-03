@@ -17,7 +17,7 @@ if (isset($_GET['data'])) {
         echo $signature;
         echo"<br>";
         echo $generatedSignature;
-        echo"<br>";echo"<br>";
+        echo"<br>";echo"<br><br>";
         if (hash_equals($signature, $generatedSignature)) {
             $verifyUrl = "https://uat.esewa.com.np/api/epay/transaction/status/?product_code=$product_code&total_amount=$total_amount&transaction_uuid=$transaction_uuid";
             $verifyData = [
